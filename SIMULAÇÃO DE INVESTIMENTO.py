@@ -3,10 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Carregamento dos dados
-valor_usd = pd.read_csv(r"dados_usd_formatados.csv")
-var_btc = pd.read_csv(r"dados_btc_formatados.csv")
-var_nasdaq = pd.read_csv(r"dados_nasdaq_formatados.csv")
-var_sp500 = pd.read_csv(r"dados_s&p500_formatados.csv")
+valor_usd = pd.read_csv("DADOS FORMATADOS\dados_usd_formatados.csv")
+var_btc = pd.read_csv("DADOS FORMATADOS\dados_btc_formatados.csv")
+var_nasdaq = pd.read_csv("DADOS FORMATADOS\dados_nasdaq_formatados.csv")
+var_sp500 = pd.read_csv("DADOS FORMATADOS\dados_s&p500_formatados.csv")
 
 # Seleção das colunas
 valor_usd = valor_usd["Abertura"].reset_index(drop=True)
